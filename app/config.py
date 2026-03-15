@@ -1,0 +1,17 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+SYMBOL = "BTC/USDT"
+TIMEFRAME = "15m"
+LIMIT = 100
+
+EMA_FAST_PERIOD = 9
+EMA_SLOW_PERIOD = 21
+RSI_PERIOD = 14
+
+CHECK_INTERVAL_SECONDS = 60
+
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
